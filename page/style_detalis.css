@@ -57,7 +57,8 @@ body{
     margin-top: 7px;
     outline: none !important;
     font-size: 16px;
-    letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.9px;
 }
 
 .container{
@@ -104,7 +105,7 @@ body{
 }
 .detalis_border > a{
     text-decoration: none;
-    color: #fff !important;
+    color: #101010 !important;
     letter-spacing: 0.4px;
 }
 .detalis{
@@ -118,7 +119,7 @@ body{
 .detalis_border{
     border: 2px solid #101010; 
     display: inline-block;
-    background: #101010; 
+    /* background: #101010;  */
     
     padding: 1rem 1.5rem; 
     text-decoration: none; 
