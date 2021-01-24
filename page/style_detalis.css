@@ -121,9 +121,9 @@ body{
     display: inline-block;
     /* background: #101010;  */
     
-    padding: 1rem 1.5rem; 
+    /* padding: 1rem 1.5rem;  */
     text-decoration: none; 
-    border-radius: 10px;
+    border-radius: 0px;
     /* margin-top: 2px; */
 
 }

@@ -1,145 +1,219 @@
 :root{
     --shadow-color: rgb(52,52,52);
 }
-*:focus,a:focus {outline: none;}
 html,body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
     height: 100%;
     width: 100%;
-    background-color: #dde1dd;
 }
-.header{
-    max-height: 70px;
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Staatliches', cursive; 
+font-family: 'Roboto', sans-serif;
+*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+    background-color: #F9F871;
 }
 .header_top{
-    display: flex;
-    justify-content: space-between;
-    background-color: #122c34;
+    font-family: 'Oswald', sans-serif;
+    color: #101010;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    border-bottom: 3px solid #101010;
+    margin-bottom: 3px;
+}
+.my_blog{
+    
+}
+.my_blog_logo{
+    display: inline-block;
+    background: #101010;
+    margin-left: 51px;
+    font-size: 32px;
+    letter-spacing: 6.4px;
+    /* margin-right: 929px; */
+    padding: 0px 3px 2px 16px;
+    margin-top: 10px;
     color: #fff;
 }
-.about_me{
-    list-style-type: none;
-    margin-right: 850px;
+.my_blog_logo:hover{
+    transition: 1s;
+    color: #F9F871;
+    /* transform: rotateY(180deg); */
 }
-.entrance, .register {
-    margin-top: 15px;
-    display: inline-block;
-    background: #6d9197; 
+
+.entrance{
+    margin-left: 50px;
+}
+.entrance, .register{
+    border: none;
+    background: #101010; 
     color: #fff; 
     padding: 1rem 1.5rem; 
     text-decoration: none; 
     border-radius: 10px;
-    border: 2px solid #fff;
+    margin-top: 7px;
+    outline: none !important;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.9px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    margin-top: 35px;
+}
+.container_blog{
+    display: grid;
+    grid-template-columns: 20% auto;
     
 }
-.register{
-    margin-right: 50px;
-}
-.my_blog{
-    font-size: 27px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-}
-.name_blog{
-    margin-left: 37px;
-    letter-spacing: 0.4px;
-}
-.book_container{
-    margin-top: 20px;
-    page-break-after: 2px 2px 2px 2xp;
+.img_left {
     display: flex;
-    justify-content: space-evenly;
-    position: relative;
+    justify-content: center;
+}
+.img_left img{
+    width: 200px;
+    height: 300px;
+    box-shadow: -21px 10px 4px var(--shadow-color);
+}
+.img_left img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: -30px 15px 10px var(--shadow-color);
+    /* width: 250px;
+    height: 350px; */
+}
+.container_about{
+    display: grid;
+    grid-template-rows: 10% 30% 10%;
+    font-family: 'Roboto', sans-serif;
+    /* width: 900px; */
+    margin-left: 20px;
+
 }
 .name_book{
-    position: absolute;
-    margin-right: 490px;
-    font-weight: 600;
     font-size: 20px;
-    margin-top: 30px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
 }
-.text_book{
-    margin-top: 30px;
+.about_book{
     text-indent: 20px;
-    padding: 30px 70px 7px 23px;
+}
+.detalis_border > a{
+    text-decoration: none;
+    color: #101010 !important;
+    letter-spacing: 0.4px;
 }
 .detalis{
-    position: absolute;
-    margin-top: 190px;
-    margin-left: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    height: 36px;
+    /* text-align: end;
+    border: 2px solid #101010; */
+    /* margin-left: 200px; */
+    
 }
-a{
-    text-decoration: none;
+.detalis_border{
+    border: 2px solid #101010; 
+    display: inline-block;
+    padding: 6px 8px 1px 10px;
+    text-decoration: none; 
+    border-radius: 3px;
+    /* margin-top: 2px; */
+
 }
+
+
 footer{
     position: fixed; 
     left: 0; bottom: 0; 
-    padding: 30px; 
-    background: #122c34; 
+    font-size: 14px;
+    /* padding: 30px; */
+    background: #101010; 
     color: #fff; 
     width: 100%;
+    height: 6%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
 .text_ftr{
-    margin: auto;
-    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 0.6px;
 }
-.a_href{
-    text-decoration: none;
-    color: #fff;
-}
-/* .shadow_img{
-    width: 90%;
-    height: 90%;
-    box-shadow: -21px 10px 4px var(--shadow-color);
-} */
 
-.container{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    width: 100%;
+
+/* LOGIN.HTML */
+
+.container_login{
+    /* text-align: center;
+    display: grid;
+    
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+    ". a a ."
+    ". a a .";
 }
-.login_container{
-    border: 2px solid #6d9197;
-    width: 400px;
-    background-color: #658B6F;
-    box-shadow: -21px 10px 4px var(--shadow-color);
+.login{
+    /* margin-top: 60;
+    display: inline-block; */
+    height: 400px;
+    width: 430px;
+    text-align: -webkit-center;
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+    border: 2px solid #101010;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20%
 }
-.login_header{
-    height: 45px;
-    background: #122c34;
+.login_logo{
+    width: 89%;
+    background-color: #101010;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.login_logo > span{
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
     color: #fff;
+    padding-bottom: 10px;
 }
-div > p{
-    padding: 13px 10px;
-    margin: auto;
+.login_form{
+    /* height: 200px; */
+    /* text-align: center; */
 }
-input[type=text] {
-    border: 2px solid #658B6F;
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 10px;
+input[type=text], input[type=password] {
+    width: 89%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
-input[type=password]{
-    border: 2px solid #658B6F;
-    border-radius: 4px;
-    margin-top: 30px;
-    margin-left: 40px;
+.btn_login{
+    background-color: #101010;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 89%;
 }
-.user, .password{
-    margin-left: 50px;  
-    color: #fff;
-    font-weight: 600; 
-}
-input[type=submit]{
-    background-color: #122c34;
-    color: #fff;
-    border-radius: 35px;
-    margin-left: 300px;
-    margin-top: 50px;
-    height: 36px;
-    width: 88px;
-}
+
+
+
+/* LIBRALY */
+
