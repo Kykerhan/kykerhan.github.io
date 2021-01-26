@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Outsider</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/imges/favicon1.ico" type="image/x-icon">
 </head>
 <body>
+    <header class="header_top">
+        <div class="my_blog">
+            <div class="my_blog_logo"><a href="/index.html">Reshetnickov</a></div>
+        </div>
+        <form action="../page/login.html" target="_self">
+            <button class="entrance">Логін</button>
+        </form>
+        <form action="#" target="_self">
+            <button  class="register_btn">Регістрація</button>
+        </form>
+    </header>
+    
+    <div class="container_register">
+        <div class="register">
+            <div class="register_logo"><span><b>R</b></span></div>
+            <form name="form_login" class="register_form" action="">
+                <label for="uname"><b>Ім'я користувача</b></label>
+                <input type="text" placeholder="Введіть ім'я" name="uname" required>
 
+                <label for="surname"><b>Прізвище користувача</b></label>
+                <input type="text" placeholder="Введіть прізвище" name="surname" required>
 
+                <label for="login_name"><b>Логін</b></label>
+                <input type="text" placeholder="Введіть логін" name="login_name" required>
+
+                <label for="drop_down_list"><b>Навчальна група</b></label>
+                <!-- <input aria-selected="true" placeholder="Оберіть" name="drop-down_list" required> -->
+                <select class="down_list" name="drop-down_list" size="1" required>
+                    <option>281</option>
+                    <option>282</option>
+                    <option disabled>283</option>
+                </select>
+
+                <label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                <label for="psw2"><b>Підтвердження паролю</b></label>
+                <input type="password" placeholder="Введіть пароль ще раз" name="psw2" required>
+
+                <button  onclick="document.getElementById('id01').style.display='block'" class="btn_register" type="submit">Зареєструватися</button>
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="text_ftr">© Copyright © 2021 M.O. Inc. All rights reserved. Developer: cadet 281 study group solder Reshetnickov M.O.</div>
+    </footer>
 </body>
 </html>
