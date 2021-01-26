@@ -2,6 +2,7 @@
     --shadow-color: rgb(52,52,52);
 }
 html,body{
+    overflow: auto;
     height: 100%;
     width: 100%;
 }
@@ -217,3 +218,18 @@ input[type=text], input[type=password] {
 
 /* LIBRALY */
 
+
+.container_about_book{
+    display: grid;
+    grid-template-rows: auto;
+    font-family: 'Roboto', sans-serif
+}
+.img_left_detalis > img{
+    width: 174px;
+    height: 241px;
+    box-shadow: -21px 10px 4px var(--shadow-color);
+    margin-left: 30px;
+}
+.cantainer_deatalis_about_book > p{
+    margin-top: 10px;
+}
