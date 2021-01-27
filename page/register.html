@@ -35,6 +35,17 @@
                 <label for="surname"><b>Прізвище користувача</b></label>
                 <input type="text" placeholder="Введіть прізвище" name="surname" required>
 
+                <label for="login_name"><b>Логін</b></label>
+                <input type="text" placeholder="Введіть логін" name="login_name" required>
+
+                <label for="drop_down_list"><b>Навчальна група</b></label>
+                <!-- <input aria-selected="true" placeholder="Оберіть" name="drop-down_list" required> -->
+                <select class="down_list" name="drop-down_list" size="1" required>
+                    <option>281</option>
+                    <option>282</option>
+                    <option disabled>283</option>
+                </select>
+
                 <button  onclick="document.getElementById('id01').style.display='block'" class="btn_register" type="submit">Зареєструватися</button>
 
             </form>
