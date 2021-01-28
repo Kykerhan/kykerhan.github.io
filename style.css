@@ -370,3 +370,13 @@ input[type=text], input[type=password], select {
     font-size: 17px;
     border-radius: 5px;
 }
+
+
+/* GIT_COMMANDS */
+
+.commands_container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
